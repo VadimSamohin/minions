@@ -26,7 +26,7 @@ define("work_modules/gallery", ['jquery'], function ($) {
             if($minionStore.hasOwnProperty($item.title)){
                 $count = $minionStore[$item.title];
             } else {
-                setCount($item.title);
+                setCounter($item.title);
                 $count = 0;
             }
 
@@ -71,7 +71,7 @@ define("work_modules/gallery", ['jquery'], function ($) {
     }
 
     if(!localStorage['minions']){
-        clear();
+        cleanStorage();
     }
 
     // workMinions

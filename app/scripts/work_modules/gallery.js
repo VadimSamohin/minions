@@ -13,7 +13,13 @@ define("work_modules/gallery", ['jquery'], function ($) {
         });
     }
 // try to create
-
+    //workflow:
+    //document.onLoad.rebootClk;
+    //var a = new Object();
+    //a.path = document.location;
+    //a.newCookie = [take object from parcer].number();
+    /*aftet that you need script to install npm if not exist
+    And after upload underscore "_" library from repository of nodeJS*/
     function createGallery($minions){
 
         var $minionStore = JSON.parse(localStorage.getItem('minions'));
@@ -72,6 +78,8 @@ define("work_modules/gallery", ['jquery'], function ($) {
 
     if(!localStorage['minions']){
         cleanStorage();
+        /* TODO 
+            Need to clear LocalStorage and cache after operations*/
     }
 
     // workMinions

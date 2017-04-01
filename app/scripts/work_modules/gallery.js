@@ -84,6 +84,7 @@ define("work_modules/gallery", ['jquery'], function ($) {
             After could be used two ways:
                 1. To make array from cache if array.legth is zero you kow what to do
                 2. To check localStorage for some information, if empty the same way
+           After all checking you need again to check local storage for files, cause these are not the same levels of memory
                 nnn*/
     }
 

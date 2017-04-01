@@ -79,7 +79,12 @@ define("work_modules/gallery", ['jquery'], function ($) {
     if(!localStorage['minions']){
         cleanStorage();
         /* TODO 
-            Need to clear LocalStorage and cache after operations*/
+            Need to clear LocalStorage and cache after operations
+            Need check for empty cache after operatio
+            After could be used two ways:
+                1. To make array from cache if array.legth is zero you kow what to do
+                2. To check localStorage for some information, if empty the same way
+                nnn*/
     }
 
     // workMinions
